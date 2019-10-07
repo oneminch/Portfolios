@@ -131,3 +131,51 @@ hr {
    height: 100px;
    border: 1px solid #000;
 }
+
+.projects {
+   width: 100%;
+   padding: 0 2em;
+   text-align: center;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      margin: 1em;
+   }
+   &__project {
+      max-width: 300px;
+      padding: 1em;
+      box-shadow: $bigShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      margin: 0 auto;
+      // >* {
+      // border: 1px solid #000;
+      // }
+      .icon {
+         width: 75px;
+         height: 75px;
+         margin: 0 auto;
+      }
+      .name {
+         height: 50px;
+         font-size: 1.5em;
+         font-weight: bold;
+         line-height: 50px;
+      }
+      .desc {
+         height: 150px;
+         overflow: hidden;
+      }
+   }
+   &__more {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: $tinyShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      line-height: 47.5px;
+      margin: 1.5em auto;
+   }
+}

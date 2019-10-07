@@ -88,4 +88,42 @@ hr {
   height: 100px;
   border: 1px solid #000; }
 
+.projects {
+  width: 100%;
+  padding: 0 2em;
+  text-align: center; }
+  .projects__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em; }
+  .projects__project {
+    max-width: 300px;
+    padding: 1em;
+    box-shadow: -7.5px 7.5px 0px #000;
+    border-radius: 5px;
+    border: 2.5px solid #000;
+    margin: 0 auto; }
+    .projects__project .icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto; }
+    .projects__project .name {
+      height: 50px;
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 50px; }
+    .projects__project .desc {
+      height: 150px;
+      overflow: hidden; }
+  .projects__more {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: -5px 5px 0px #000;
+    border-radius: 5px;
+    border: 2.5px solid #000;
+    line-height: 47.5px;
+    margin: 1.5em auto; }
+
 /*# sourceMappingURL=style.css.map */

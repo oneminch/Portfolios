@@ -46,10 +46,10 @@ hr {
       width: 45px;
       min-width: 45px;
       height: 45px;
-      box-shadow: -5px 5px 0px #000;
-      border-radius: 5px;
+      box-shadow: -4px 4px 0px #000;
+      border-radius: 3px;
       margin: 7.5px;
-      border: 2.5px solid #000;
+      border: 1px solid #000;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -71,8 +71,8 @@ hr {
   width: 60%;
   padding: 1.5em;
   box-shadow: -7.5px 7.5px 0px #000;
-  border-radius: 5px;
-  border: 2.5px solid #000;
+  border-radius: 3px;
+  border: 1px solid #000;
   margin: 0 auto; }
 .bio__icon {
   width: 75px;
@@ -96,13 +96,13 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em; }
+    margin: 1em 0 2em 0; }
   .projects__project {
-    max-width: 300px;
+    max-width: 275px;
     padding: 1em;
     box-shadow: -7.5px 7.5px 0px #000;
-    border-radius: 5px;
-    border: 2.5px solid #000;
+    border-radius: 3px;
+    border: 1px solid #000;
     margin: 0 auto; }
     .projects__project .icon {
       width: 75px;
@@ -120,9 +120,9 @@ hr {
     width: 150px;
     height: 50px;
     cursor: pointer;
-    box-shadow: -5px 5px 0px #000;
-    border-radius: 5px;
-    border: 2.5px solid #000;
+    box-shadow: -4px 4px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000;
     line-height: 47.5px;
     margin: 1.5em auto; }
 

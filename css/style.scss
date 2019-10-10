@@ -24,17 +24,17 @@ body {
 // Each Section/Container
 .section {
    width: 100%;
+   max-width: 1440px;
    min-height: 100px;
    background-color: #fff;
    color: $darkColor;
-   margin: 20px auto;
-   border: 1px solid #ddd;
+   margin: 1em auto;
 }
 
 // Section Break
 hr {
    width: 50%;
-   border: 1px solid #bbb;
+   border: .5px solid #bbb;
    margin: 25px auto;
    text-align: center;
 }
@@ -98,13 +98,13 @@ hr {
    width: 100px;
    height: 100px;
    margin: -115px auto 0 auto;
-   // border: 1px solid #000;
+   // border: 1px solid $darkColor;
    text-align: center;
 }
 
 // Bio Container
 .bio {
-   // border: 1px solid #000;
+   // border: 1px solid $darkColor;
    &__text {
       width: 60%;
       padding: 1.5em;
@@ -129,9 +129,10 @@ hr {
 // Timeline: Experience
 .timeline {
    height: 100px;
-   border: 1px solid #000;
+   border: 1px solid $darkColor;
 }
 
+// Projects: Top Projects
 .projects {
    width: 100%;
    padding: 0 2em;
@@ -150,7 +151,7 @@ hr {
       border: $bd;
       margin: 0 auto;
       // >* {
-      // border: 1px solid #000;
+      // border: 1px solid $darkColor;
       // }
       .icon {
          width: 75px;
@@ -178,4 +179,117 @@ hr {
       line-height: 47.5px;
       margin: 1.5em auto;
    }
+}
+
+// Skills: List of skills and tools
+.skills {
+   text-align: center;
+   padding: 0 2em;
+   h1 {
+      margin: 0;
+   }
+   &__container {
+      width: 100%;
+      text-align: left;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+   &__side {
+      width: 325px;
+   }
+   &__list {
+      width: 325px;
+      padding: 1em;
+      box-shadow: $bigShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+   }
+   &__icon {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background-color: $darkColor;
+      padding: .75em;
+      margin: -25px 0 0 -25px;
+   }
+}
+
+// Interests
+.interests {
+   width: 100%;
+   padding: 0 2em;
+   text-align: center;
+   &__container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; 
+      margin: 1em 0 2em 0;
+   }
+   &__interest {
+      width: 275px;
+      height: 200px;
+      padding: 1em;
+      box-shadow: $bigShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      margin: 0 auto;
+      .icon {
+         width: 75px;
+         height: 75px;
+         padding: .5em;
+         margin: 0 auto;
+      }
+      .name {
+         height: 75px;
+         font-size: 1.25em;
+         font-weight: bold;
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+      }
+   }
+   &__more {
+      max-width: 200px;
+      height: 50px;
+      box-shadow: $tinyShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      line-height: 47.5px;
+      margin: 1.5em auto;
+   }
+}
+
+// Contact
+.contact {
+   width: 100%;
+   text-align: center;
+   // border: 1px solid $darkColor;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   &__btn {
+      width: 150px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: $tinyShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      font-weight: bold;
+      line-height: 47.5px;
+      margin: 1em auto;
+   }
+}
+
+// Footer
+.footer {
+   height: 100px;
+   font-size: .75em;
+   margin: 0;
+   padding: 0 1em;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   background-color: $darkColor;
+   color: rgb(214, 214, 214);
 }

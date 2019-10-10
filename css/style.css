@@ -10,15 +10,15 @@ body {
 
 .section {
   width: 100%;
+  max-width: 1440px;
   min-height: 100px;
   background-color: #fff;
   color: #000;
-  margin: 20px auto;
-  border: 1px solid #ddd; }
+  margin: 1em auto; }
 
 hr {
   width: 50%;
-  border: 1px solid #bbb;
+  border: .5px solid #bbb;
   margin: 25px auto;
   text-align: center; }
 
@@ -125,5 +125,99 @@ hr {
     border: 1px solid #000;
     line-height: 47.5px;
     margin: 1.5em auto; }
+
+.skills {
+  text-align: center;
+  padding: 0 2em; }
+  .skills h1 {
+    margin: 0; }
+  .skills__container {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .skills__side {
+    width: 325px; }
+  .skills__list {
+    width: 325px;
+    padding: 1em;
+    box-shadow: -7.5px 7.5px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000; }
+  .skills__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    padding: .75em;
+    margin: -25px 0 0 -25px; }
+
+.interests {
+  width: 100%;
+  padding: 0 2em;
+  text-align: center; }
+  .interests__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1em 0 2em 0; }
+  .interests__interest {
+    width: 275px;
+    height: 200px;
+    padding: 1em;
+    box-shadow: -7.5px 7.5px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+    margin: 0 auto; }
+    .interests__interest .icon {
+      width: 75px;
+      height: 75px;
+      padding: .5em;
+      margin: 0 auto; }
+    .interests__interest .name {
+      height: 75px;
+      font-size: 1.25em;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .interests__more {
+    max-width: 200px;
+    height: 50px;
+    box-shadow: -4px 4px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+    line-height: 47.5px;
+    margin: 1.5em auto; }
+
+.contact {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__btn {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+    font-weight: bold;
+    line-height: 47.5px;
+    margin: 1em auto; }
+
+.footer {
+  height: 100px;
+  font-size: .75em;
+  margin: 0;
+  padding: 0 1em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #d6d6d6; }
 
 /*# sourceMappingURL=style.css.map */

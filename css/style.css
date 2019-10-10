@@ -85,7 +85,8 @@ hr {
     border-radius: 50%; }
 
 .timeline {
-  height: 100px;
+  text-align: center;
+  min-height: 100px;
   border: 1px solid #000; }
 
 .projects {

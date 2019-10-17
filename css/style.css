@@ -111,10 +111,12 @@ hr {
       margin: .5em auto;
       border-radius: 3px; }
   .experience__list {
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: .25em; }
+    padding: .25em;
+    margin: 0 auto; }
     .experience__list__item {
       width: 20px;
       height: 20px;
@@ -138,7 +140,7 @@ hr {
         .experience__list__item--active span {
           background-color: #000; }
   .experience hr {
-    width: 85%;
+    width: 90%;
     border: 1.5px solid #000;
     border-radius: 1.5px;
     margin: 0 auto;
@@ -204,6 +206,8 @@ hr {
     box-shadow: -7.5px 7.5px 0px #000;
     border-radius: 3px;
     border: 1px solid #000; }
+    .skills__list li {
+      list-style-type: square; }
   .skills__icon {
     width: 50px;
     height: 50px;

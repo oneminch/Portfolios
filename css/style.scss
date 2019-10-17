@@ -160,10 +160,12 @@ hr {
       }
    }
    &__list {
+      width: 90%;
       display: flex;
       align-items: center;
       justify-content: space-around;
       padding: .25em;
+      margin: 0 auto;
       &__item {
          width: 20px; height: 20px;
          cursor: pointer;
@@ -191,7 +193,7 @@ hr {
    }
    // Time-line
    hr {
-      width: 85%;
+      width: 90%;
       border: 1.5px solid $darkColor;
       border-radius: 1.5px;
       margin: 0 auto;
@@ -274,6 +276,7 @@ hr {
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
       border: $bd;
+      li { list-style-type: square; }
    }
    &__icon {
       width: 50px; height: 50px;

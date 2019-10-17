@@ -1,3 +1,7 @@
+const all_exps = document.querySelectorAll(".experience__list__item");  // List of all experiences
+const current_exp = document.querySelector(".experience__current");     // My current up to date experience
+const footer_text = document.querySelector(".footer__text");            // Footer text with copyright content
+
 const data_json = {
    // Experience data list
    // Each data: id, name, date, description & link(?)
@@ -12,22 +16,22 @@ const data_json = {
       {
          id: 2,
          name: "School 2",
-         date: ["Jan '16","Dec '19"],
-         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
+         date: ["Jan '16","Dec '13"],
+         desc: "Also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
          link: ["DDG", "https://ddg.gg"]
       },
       {
          id: 3, 
          name: "School 3",
-         date: ["Jan '16","Dec '19"],
-         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?", 
+         date: ["Jan '16","Dec '12"],
+         desc: "Also also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?", 
          link: ["DDG", "https://ddg.gg"]
       },
       {
          id: 4,
          name: "School 4",
-         date: ["Jan '16","Dec '19"],
-         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
+         date: ["Jan '16","Dec '29"],
+         desc: "Also also also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
          link: ["DDG", "https://ddg.gg"]
       },
    ],
@@ -35,14 +39,19 @@ const data_json = {
    proj_data: []
 };
 
+// Renders text with current year to footer
+const footerText = () => {
+   let d = new Date();
 
-const all_exps = document.querySelectorAll(".experience__list__item");        // List of all experiences
+   let markup = `
+      Designed && Coded by Me
+      <br>
+      &copy; ${d.getFullYear()}
+   `;
+   footer_text.innerHTML = markup;
+};
 
-
-// TODO
-// - Fill experiences and projects on load with default values
-
-// Loads experiences to UI: text, description + link(if applicable)
+// Returns experience data markup: text, description + link(if applicable)
 const loadExpData = (id) => {
    let markup = ``;
    const exp_data_list = data_json.exp_data;
@@ -69,6 +78,31 @@ const loadExpData = (id) => {
    return markup;
 };
 
+// Renders experience from given id to container
+const renderExp = (id, container) => {
+   let curr_exp_markup = loadExpData(id);
+   container.innerHTML = curr_exp_markup;
+};
+
+// Load footer text & renders current experience on load
+window.addEventListener('load', () => {
+   // Render footer text
+   footerText();
+
+   // Highlights current experience indicator circle
+   const curr_exp_indicator = all_exps[all_exps.length-1];
+   curr_exp_indicator.classList.add("experience__list__item--active");
+   
+   // Current experience from json file
+   const exp_obj_list = data_json.exp_data;
+   const curr_exp_obj = exp_obj_list[exp_obj_list.length-1];
+
+   renderExp(curr_exp_obj.id, current_exp);
+});
+
+// TODO
+// - Fill projects on load with default values
+
 // Loads projects to UI
 const loadProjectData = (id) => {
 
@@ -86,8 +120,8 @@ all_exps.forEach(el => el.addEventListener('click', (e) => {
       clicked_exp.classList.add("experience__list__item--active");
       
       // Loads experience data correponding clicked circle
-      const markup = loadExpData(exp_id);
-      const exp_details = clicked_exp.parentElement.parentElement.previousElementSibling;
-      exp_details.innerHTML = markup;
+      const exp_container = clicked_exp.parentElement.parentElement.previousElementSibling;
+      renderExp(exp_id, exp_container);
    }
 }));
+

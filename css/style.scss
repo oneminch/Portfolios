@@ -9,7 +9,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
 * {
    outline: none;
    box-sizing: border-box;
-   text-decoration: none;
+   text-decoration: none !important;
    // font-family: 'Notable', sans-serif;
    // font-family: 'Abril Fatface', cursive;
    font-family: 'DM Serif Display', serif;
@@ -126,10 +126,79 @@ hr {
 }
 
 // Timeline: Experience
-.timeline {
+.experience {
    text-align: center;
    min-height: 100px;
-   border: 1px solid $darkColor;
+   padding-bottom: 1em;
+   // border: 1px solid $darkColor;
+   h1 {
+      margin: 0 auto .5em auto;
+   }
+   &__container {
+      width: 60%;
+      box-shadow: $bigShadow;
+      border-radius: $roundCorners;
+      border: $bd;
+      margin: 0 auto;
+   }
+   &__current {
+      padding: 1em;
+      width: 100%;
+      // border: 1px solid red;
+      >* {
+         margin: .25em .5em .75em .5em;
+      }
+      &__link {
+         width: 150px;
+         height: 40px;
+         line-height: 40px;
+         background-color: #fff;
+         display: block;
+         border: $bd;
+         margin: .5em auto;
+         border-radius: $roundCorners;
+      }
+   }
+   &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: .25em;
+      &__item {
+         width: 20px; height: 20px;
+         cursor: pointer;
+         margin: 0 .5em;
+         border-radius: 50%;
+         border: $bd;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 1;
+         background-color: #fff;
+         span {
+            display: block;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+         }
+         &--active {
+            width: 30px; height: 30px;
+            span {
+               background-color: $darkColor;
+            }
+         }
+      }
+   }
+   // Time-line
+   hr {
+      width: 85%;
+      border: 1.5px solid $darkColor;
+      border-radius: 1.5px;
+      margin: 0 auto;
+      position: relative;
+      top: calc(-15.75px - .3em);
+      z-index: 0;
+   }
 }
 
 // Projects: Top Projects
@@ -192,11 +261,12 @@ hr {
       width: 100%;
       text-align: left;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
    }
    &__side {
       width: 325px;
+      margin: 0 3em;
    }
    &__list {
       width: 325px;
@@ -221,26 +291,26 @@ hr {
    text-align: center;
    &__container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center; 
       margin: 1em 0 2em 0;
    }
    &__interest {
-      width: 275px;
-      height: 200px;
-      padding: 1em;
+      width: 200px;
+      height: 225px;
+      padding: .75em;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
       border: $bd;
-      margin: 0 auto;
+      margin: 0 3em;
       .icon {
          width: 75px;
-         height: 75px;
+         height: 100px;
          padding: .5em;
          margin: 0 auto;
       }
       .name {
-         height: 75px;
+         height: 100px;
          font-size: 1.25em;
          font-weight: bold;
          display: flex;

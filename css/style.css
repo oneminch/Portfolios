@@ -1,7 +1,7 @@
 * {
   outline: none;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: 'DM Serif Display', serif; }
 
 body {
@@ -84,10 +84,67 @@ hr {
     width: 100%;
     border-radius: 50%; }
 
-.timeline {
+.experience {
   text-align: center;
   min-height: 100px;
-  border: 1px solid #000; }
+  padding-bottom: 1em; }
+  .experience h1 {
+    margin: 0 auto .5em auto; }
+  .experience__container {
+    width: 60%;
+    box-shadow: -7.5px 7.5px 0px #000;
+    border-radius: 3px;
+    border: 1px solid #000;
+    margin: 0 auto; }
+  .experience__current {
+    padding: 1em;
+    width: 100%; }
+    .experience__current > * {
+      margin: .25em .5em .75em .5em; }
+    .experience__current__link {
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #fff;
+      display: block;
+      border: 1px solid #000;
+      margin: .5em auto;
+      border-radius: 3px; }
+  .experience__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .25em; }
+    .experience__list__item {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      margin: 0 .5em;
+      border-radius: 50%;
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      background-color: #fff; }
+      .experience__list__item span {
+        display: block;
+        width: 80%;
+        height: 80%;
+        border-radius: 50%; }
+      .experience__list__item--active {
+        width: 30px;
+        height: 30px; }
+        .experience__list__item--active span {
+          background-color: #000; }
+  .experience hr {
+    width: 85%;
+    border: 1.5px solid #000;
+    border-radius: 1.5px;
+    margin: 0 auto;
+    position: relative;
+    top: calc(-15.75px - .3em);
+    z-index: 0; }
 
 .projects {
   width: 100%;
@@ -136,10 +193,11 @@ hr {
     width: 100%;
     text-align: left;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; }
   .skills__side {
-    width: 325px; }
+    width: 325px;
+    margin: 0 3em; }
   .skills__list {
     width: 325px;
     padding: 1em;
@@ -160,24 +218,24 @@ hr {
   text-align: center; }
   .interests__container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 1em 0 2em 0; }
   .interests__interest {
-    width: 275px;
-    height: 200px;
-    padding: 1em;
+    width: 200px;
+    height: 225px;
+    padding: .75em;
     box-shadow: -7.5px 7.5px 0px #000;
     border-radius: 3px;
     border: 1px solid #000;
-    margin: 0 auto; }
+    margin: 0 3em; }
     .interests__interest .icon {
       width: 75px;
-      height: 75px;
+      height: 100px;
       padding: .5em;
       margin: 0 auto; }
     .interests__interest .name {
-      height: 75px;
+      height: 100px;
       font-size: 1.25em;
       font-weight: bold;
       display: flex;

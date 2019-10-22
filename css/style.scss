@@ -1,9 +1,12 @@
 @import "responsive";
 
+$inactive: #bbb; // Inactive color: gray
 $darkColor: #000; // Dark color: Black
 $lightColor: #fff; // Light color: White
-$bd: 1px solid $darkColor;  // Border
+$disabled: 1px solid $inactive;  // Disabled Border
+$active: 1px solid $darkColor;  // Active Border
 $roundCorners: 3px; // Round corner radius
+$inactivShadow: -4px 4px 0px $inactive; // Box shadow for inactive containers
 $tinyShadow: -4px 4px 0px $darkColor; // Box shadow for small containers
 $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
 
@@ -89,7 +92,7 @@ hr {
          box-shadow: $tinyShadow;
          border-radius: $roundCorners;
          margin: 7.5px;
-         border: $bd;
+         border: $active;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -118,7 +121,7 @@ hr {
       padding: 1.5rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
-      border: $bd;
+      border: $active;
       margin: 0 auto 1rem auto;
    }
    &__icon {
@@ -149,7 +152,7 @@ hr {
       width: 65%;
       min-height: 150px;
       padding: .75rem;
-      border: $bd;
+      border: $active;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
       >* {
@@ -162,7 +165,7 @@ hr {
          line-height: 40px;
          display: block;
          margin-top: 1rem;
-         border: $bd;
+         border: $active;
          border-radius: $roundCorners;
          // if no link to experience
          &--inexistent {
@@ -184,7 +187,7 @@ hr {
          cursor: pointer;
          margin: 0 .5rem;
          border-radius: 50%;
-         border: $bd;
+         border: $active;
          display: flex;
          align-items: center;
          justify-content: center;
@@ -231,7 +234,7 @@ hr {
       padding: 1rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
-      border: $bd;
+      border: $active;
       margin: 0 1em;
       
       // >* {
@@ -256,10 +259,11 @@ hr {
    &__more {
       width: 150px;
       height: 50px;
+      display: block;
       cursor: pointer;
+      border: $active;
       box-shadow: $tinyShadow;
       border-radius: $roundCorners;
-      border: $bd;
       line-height: 47.5px;
       margin: 1.5rem auto;
    }
@@ -288,7 +292,7 @@ hr {
       padding: 1rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
-      border: $bd;
+      border: $active;
       li { list-style-type: square; }
    }
    &__icon {
@@ -320,7 +324,7 @@ hr {
       padding: .75rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
-      border: $bd;
+      border: $active;
       margin: 0 2rem;
       >* {
          height: 100px;
@@ -341,9 +345,6 @@ hr {
    &__more {
       max-width: 200px;
       height: 50px;
-      // box-shadow: $tinyShadow;
-      // border-radius: $roundCorners;
-      // border: $bd;
       line-height: 47.5px;
       margin: 1.5rem auto;
    }
@@ -353,17 +354,21 @@ hr {
 .contact {
    width: 100%;
    text-align: center;
-   // border: 1px solid $darkColor;
    display: flex;
    justify-content: center;
    align-items: center; 
    &__btn {
       width: 150px;
-      height: 50px;
-      cursor: pointer;
-      box-shadow: $tinyShadow;
+      height: 50px;      
+      // cursor: pointer;
+      
+      cursor: not-allowed;
+      color: $inactive;
+      box-shadow: $inactivShadow;
+
+      // box-shadow: $tinyShadow;
       border-radius: $roundCorners;
-      border: $bd;
+      border: $disabled;
       font-weight: bold;
       line-height: 47.5px;
       margin: 1rem auto;
@@ -372,12 +377,13 @@ hr {
 
 // Footer
 .footer {
-   height: 100px;
+   min-height: 115px;
    font-size: .75rem;
    margin: 0 auto;
-   padding: 0 1rem;
+   padding: 1rem;
    text-align: center;
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center; 
    border-top-left-radius: $roundCorners;
@@ -386,5 +392,14 @@ hr {
    &__text {
       color: $lightColor;
       background-color: transparent;
+   }
+   a {
+      background-color: $darkColor;
+      img {
+         background-color: $darkColor;
+         width: 75px;
+         height: auto;
+         // display: block;
+      }
    }
 }

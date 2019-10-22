@@ -338,11 +338,10 @@ hr {
   .projects__more {
     width: 150px;
     height: 50px;
-    display: block;
     cursor: pointer;
-    border: 1px solid #000;
     box-shadow: -4px 4px 0px #000;
     border-radius: 3px;
+    border: 1px solid #000;
     line-height: 47.5px;
     margin: 1.5rem auto; }
 
@@ -422,23 +421,21 @@ hr {
   .contact__btn {
     width: 150px;
     height: 50px;
-    cursor: not-allowed;
-    color: #bbb;
-    box-shadow: -4px 4px 0px #bbb;
+    cursor: pointer;
+    box-shadow: -4px 4px 0px #000;
     border-radius: 3px;
-    border: 1px solid #bbb;
+    border: 1px solid #000;
     font-weight: bold;
     line-height: 47.5px;
     margin: 1rem auto; }
 
 .footer {
-  min-height: 115px;
+  height: 100px;
   font-size: .75rem;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-top-left-radius: 3px;
@@ -448,10 +445,8 @@ hr {
     color: #fff;
     background-color: transparent; }
   .footer a {
-    background-color: #000; }
-    .footer a img {
-      background-color: #000;
-      width: 75px;
-      height: auto; }
+    width: 75px;
+    height: 75px;
+    display: block; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

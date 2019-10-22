@@ -1,4 +1,4 @@
-// Import responsive
+@import "responsive";
 
 $darkColor: #000; // Dark color: Black
 $lightColor: #fff; // Light color: White
@@ -17,6 +17,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
    transition-duration: 0.25s;
    background-color: $lightColor;
    color: $darkColor;
+   // border: .5px solid red;
 }
 
 html {
@@ -56,10 +57,20 @@ hr {
       text-align: center;
       // border: 1px solid $darkColor;
    }
-   // Intro Left:  Name, Title & Social
+   // Intro Left: Profile Image/Illustration
+   &__img {
+      margin-left: 2em;
+      img {
+         width: 225px;
+         height: 225px;
+         border-radius: 50%;
+      }
+   }
+   // Intro Right:  Name, Title & Social
    &__text {
       text-align: left;
       // border: 1px solid $darkColor;
+      margin-right: 2em;
       >* { 
          width: 50%; 
          margin: 15px auto;
@@ -88,14 +99,6 @@ hr {
          }
       }
    }
-   // Intro Right: Profile Image/Illustration
-   &__img {
-      img {
-         width: 250px;
-         height: 250px;
-         border-radius: 50%;
-      }
-   }
 }
 
 // Scroll Down Icon
@@ -111,7 +114,7 @@ hr {
 .bio {
    // border: 1px solid $darkColor;
    &__text {
-      width: 60%;
+      width: 65%;
       padding: 1.5rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
@@ -143,7 +146,7 @@ hr {
       margin: 0 auto;
    }
    &__current {
-      width: 60%;
+      width: 65%;
       min-height: 150px;
       padding: .75rem;
       border: $bd;
@@ -168,7 +171,7 @@ hr {
       }
    }
    &__list {
-      width: 60%;
+      width: 65%;
       padding: .5rem 0;
       margin: 1.5rem auto 0 auto;
       &__items {
@@ -219,17 +222,18 @@ hr {
    text-align: center;
    &__container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center; 
       margin: 1rem 0 2rem 0;
    }
    &__project {
-      max-width: 275px;
+      width: 250px;
       padding: 1rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
       border: $bd;
-      margin: 0 auto;
+      margin: 0 1em;
+      
       // >* {
       // border: 1px solid $darkColor;
       // }
@@ -311,21 +315,22 @@ hr {
       margin: 1rem 0 2rem 0;
    }
    &__interest {
-      width: 200px;
+      width: 175px;
       height: 225px;
       padding: .75rem;
       box-shadow: $bigShadow;
       border-radius: $roundCorners;
       border: $bd;
-      margin: 0 3rem;
+      margin: 0 2rem;
+      >* {
+         height: 100px;
+      }
       .icon {
          width: 75px;
-         height: 100px;
          padding: .5rem;
          margin: 0 auto;
       }
       .name {
-         height: 100px;
          font-size: 1.25rem;
          font-weight: bold;
          display: flex;
@@ -336,9 +341,9 @@ hr {
    &__more {
       max-width: 200px;
       height: 50px;
-      box-shadow: $tinyShadow;
-      border-radius: $roundCorners;
-      border: $bd;
+      // box-shadow: $tinyShadow;
+      // border-radius: $roundCorners;
+      // border: $bd;
       line-height: 47.5px;
       margin: 1.5rem auto;
    }
@@ -375,6 +380,8 @@ hr {
    display: flex;
    justify-content: center;
    align-items: center; 
+   border-top-left-radius: $roundCorners;
+   border-top-right-radius: $roundCorners;
    background-color: $darkColor;
    &__text {
       color: $lightColor;

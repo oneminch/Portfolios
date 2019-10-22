@@ -1,3 +1,157 @@
+@media only screen and (max-width: 1024px) {
+  body .projects {
+    padding: 0 1rem; }
+    body .projects__project {
+      width: 225px; } }
+@media only screen and (max-width: 900px) {
+  body .intro {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1.5em 0; }
+    body .intro > * {
+      width: 90%;
+      margin: 0; }
+    body .intro__img img {
+      width: 125px;
+      height: 125px; }
+    body .intro__text {
+      text-align: center; }
+    body .intro__social {
+      width: auto;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  body .scroll-down {
+    width: 75px;
+    height: 75px; }
+  body .bio__text {
+    width: 80%; }
+  body .bio__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: calc(-25px - 1rem); }
+  body .experience__current {
+    width: 80%; }
+  body .experience__list {
+    width: 80%; }
+  body .projects {
+    padding: 0 1rem; }
+    body .projects__container {
+      margin: .5rem 0 1rem 0; }
+    body .projects__project {
+      width: 200px;
+      margin: 0 1.25rem; }
+      body .projects__project .icon {
+        width: 50px;
+        height: 50px; }
+      body .projects__project .name {
+        height: 35px;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 35px; }
+      body .projects__project .desc {
+        height: 135px;
+        overflow: hidden; }
+  body .skills__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  body .skills__side {
+    width: 75%; }
+  body .skills__list {
+    width: 100%; }
+  body .interests {
+    width: 100%;
+    padding: 0 1rem; }
+    body .interests__interest {
+      margin: 0 1.25rem; } }
+@media only screen and (max-width: 768px) {
+  body hr {
+    margin: 15px auto; }
+  body .bio__text {
+    width: 90%; }
+  body .bio__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: calc(-25px - 1rem); }
+  body .experience__current {
+    width: 90%; }
+  body .experience__list {
+    width: 90%; }
+  body .projects {
+    padding: 0 1rem; }
+    body .projects__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: .5rem 0 1rem 0; }
+    body .projects__project {
+      width: 90%;
+      height: 125px;
+      padding: 10px;
+      margin: .75rem auto;
+      position: relative;
+      text-align: left; }
+      body .projects__project > * {
+        display: inline;
+        position: absolute;
+        padding: .25rem;
+        border-radius: 5px; }
+      body .projects__project .icon {
+        width: 115px;
+        height: 115px;
+        top: 5px;
+        left: 5px;
+        padding: 1rem; }
+      body .projects__project .name {
+        height: 45px;
+        font-size: 1rem;
+        font-weight: bold;
+        top: 5px;
+        left: 120px; }
+      body .projects__project .desc {
+        padding-right: 1.25rem;
+        height: 70px;
+        overflow: hidden;
+        font-size: .9rem;
+        top: 50px;
+        left: 120px; }
+  body .skills__side {
+    width: 85%; }
+  body .interests {
+    padding: 0 1rem; }
+    body .interests__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: .5rem 0 1rem 0; }
+    body .interests__interest {
+      width: 75%;
+      height: 75px;
+      margin: .75rem auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .interests__interest > * {
+        height: 65px;
+        margin: 0 1rem; }
+      body .interests__interest .icon {
+        margin: 0;
+        width: 65px; }
+      body .interests__interest .name {
+        width: 125px;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: auto; } }
 * {
   outline: none;
   box-sizing: border-box;
@@ -34,8 +188,15 @@ hr {
   .intro > * {
     width: 50%;
     text-align: center; }
+  .intro__img {
+    margin-left: 2em; }
+    .intro__img img {
+      width: 225px;
+      height: 225px;
+      border-radius: 50%; }
   .intro__text {
-    text-align: left; }
+    text-align: left;
+    margin-right: 2em; }
     .intro__text > * {
       width: 50%;
       margin: 15px auto; }
@@ -59,10 +220,6 @@ hr {
       .intro__social > * img {
         width: 30px;
         height: 30px; }
-  .intro__img img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%; }
 
 .scroll-down {
   width: 100px;
@@ -71,7 +228,7 @@ hr {
   text-align: center; }
 
 .bio__text {
-  width: 60%;
+  width: 65%;
   padding: 1.5rem;
   box-shadow: -7.5px 7.5px 0px #000;
   border-radius: 3px;
@@ -95,7 +252,7 @@ hr {
   .experience h1 {
     margin: 0 auto; }
   .experience__current {
-    width: 60%;
+    width: 65%;
     min-height: 150px;
     padding: .75rem;
     border: 1px solid #000;
@@ -115,7 +272,7 @@ hr {
       .experience__current__link--inexistent {
         display: none; }
   .experience__list {
-    width: 60%;
+    width: 65%;
     padding: .5rem 0;
     margin: 1.5rem auto 0 auto; }
     .experience__list__items {
@@ -156,16 +313,16 @@ hr {
   text-align: center; }
   .projects__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 1rem 0 2rem 0; }
   .projects__project {
-    max-width: 275px;
+    width: 250px;
     padding: 1rem;
     box-shadow: -7.5px 7.5px 0px #000;
     border-radius: 3px;
     border: 1px solid #000;
-    margin: 0 auto; }
+    margin: 0 1em; }
     .projects__project .icon {
       width: 75px;
       height: 75px;
@@ -230,20 +387,20 @@ hr {
     align-items: center;
     margin: 1rem 0 2rem 0; }
   .interests__interest {
-    width: 200px;
+    width: 175px;
     height: 225px;
     padding: .75rem;
     box-shadow: -7.5px 7.5px 0px #000;
     border-radius: 3px;
     border: 1px solid #000;
-    margin: 0 3rem; }
+    margin: 0 2rem; }
+    .interests__interest > * {
+      height: 100px; }
     .interests__interest .icon {
       width: 75px;
-      height: 100px;
       padding: .5rem;
       margin: 0 auto; }
     .interests__interest .name {
-      height: 100px;
       font-size: 1.25rem;
       font-weight: bold;
       display: flex;
@@ -252,9 +409,6 @@ hr {
   .interests__more {
     max-width: 200px;
     height: 50px;
-    box-shadow: -4px 4px 0px #000;
-    border-radius: 3px;
-    border: 1px solid #000;
     line-height: 47.5px;
     margin: 1.5rem auto; }
 
@@ -284,6 +438,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   background-color: #000; }
   .footer__text {
     color: #fff;

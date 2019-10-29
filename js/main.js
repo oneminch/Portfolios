@@ -1,6 +1,7 @@
 const all_exps = document.querySelectorAll(".experience__list__item");  // List of all experiences
 const current_exp = document.querySelector(".experience__current");     // My current up to date experience
 const footer_text = document.querySelector(".footer__text");            // Footer text with copyright content
+const projects__container = document.querySelector(".projects__container");
 
 const data_json = {
    // Experience data list
@@ -8,35 +9,56 @@ const data_json = {
    exp_data: [
       {
          id: 1,
-         name: "School 1",
-         date: ["Jan '16","Dec '19"],
-         desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
-         link: ["DDG", "https://ddg.gg"]
+         name: "Freelance Web Designer 📱",
+         date: ["Sep '17","Nov '17"],
+         desc: "I helped design and develop a landing page as well as a logo for an app by independent iOS developer.",
+         link: [/* "DDG", "https://ddg.gg" */]
       },
       {
          id: 2,
-         name: "School 2",
-         date: ["Jan '16","Dec '13"],
-         desc: "Also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
-         link: ["DDG", "https://ddg.gg"]
+         name: "Mini-Projects 💻",
+         date: ["Jul '17","Present"],
+         desc: "I like to work on small projects to solidify new concepts I'm learning.",
+         link: ["@GitHub", "https://github.com/oneminch?tab=repositories"]
       },
       {
-         id: 3, 
-         name: "School 3",
-         date: ["Jan '16","Dec '12"],
-         desc: "Also also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?", 
-         link: ["DDG", "https://ddg.gg"]
+         id: 3,
+         name: "Tennessee Tech 🎓",
+         date: ["Aug '17","Dec '21 (exp.)"],
+         desc: "I'm currently a junior at Tennessee Tech University majoring in computer science; I transferred half-way from a 2 year college at which I majored in Information Management Systems.",
+         link: ["Homepage", "https://tntech.edu"]
       },
       {
-         id: 4,
-         name: "School 4",
-         date: ["Jan '16","Dec '29"],
-         desc: "Also also also Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum autem ab dolorem excepturi beatae fugit nulla deleniti voluptas reprehenderit temporibus consequuntur animi vero a ullam, nesciunt quam maiores minima et?",
-         link: ["DDG", "https://ddg.gg"]
-      },
+         id: 4, 
+         name: "OpenGenus Foundation 📝",
+         date: ["Sep '19","Present"],
+         desc: "I'm currently a Software Developer Intern at the OpenGenus Foundation. At the moment, I'm mainly involved in writing articles related to various web development topics", 
+         link: ["Profile", "https://iq.opengenus.org/author/durg"]
+      }
    ],
+
    // Projects data list
-   proj_data: []
+   // Each data: id, name, url, image url & description
+   proj_data: [
+      {
+         name: "Newsfeed",
+         url: "https://oneminch.github.io/Newsfeed/",
+         app_icon: "img/logos/newsfeed.svg",
+         desc: "A news app that loads the latest 20 headlines from an API based on a category selected."
+      },
+      {
+         name: "Encrypted List",
+         url: "https://oneminch.github.io/encryptedlist/",
+         app_icon: "img/logos/encryptedlist.svg",
+         desc: "A collective list of apps and services offering end-to-end encryption with filtering options."
+      },
+      {
+         name: "Dolist",
+         url: "https://oneminch.github.io/Dolist/",
+         app_icon: "img/logos/dolist.svg",
+         desc: "A to-do app build with jQuery with ability to add, complete, edit and delete tasks (First JavaScript Project)"
+      }
+   ]
 };
 
 // Renders text with current year to footer
@@ -98,14 +120,24 @@ window.addEventListener('load', () => {
    const curr_exp_obj = exp_obj_list[exp_obj_list.length-1];
 
    renderExp(curr_exp_obj.id, current_exp);
+   renderProjectData(data_json.proj_data);
 });
 
-// TODO
-// - Fill projects on load with default values
-
-// Loads projects to UI
-const loadProjectData = (id) => {
-
+// Renders projects to UI
+const renderProjectData = (projectList) => {
+   let markup = ``;
+   for (let i = 0; i < projectList.length; i++) {
+      markup += `
+         <a href="${projectList[i].url}" target="_blank" class="projects__project">
+            <div class="icon">
+               <img src="${projectList[i].app_icon}" alt="Project Icon"/>
+            </div> 
+            <div class="name">${projectList[i].name}</div>
+            <div class="desc">${projectList[i].desc}</div>
+         </a>
+      `;
+   }
+   projects__container.innerHTML = markup;
 };
 
 // Switch to different experiences with timeline
@@ -124,4 +156,6 @@ all_exps.forEach(el => el.addEventListener('click', (e) => {
       renderExp(exp_id, exp_container);
    }
 }));
+
+
 

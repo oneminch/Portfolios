@@ -109,7 +109,7 @@
         height: 115px;
         top: 5px;
         left: 5px;
-        padding: 1rem; }
+        padding: 1.5rem; }
       body .projects__project .name {
         height: 45px;
         font-size: 1rem;
@@ -152,11 +152,28 @@
         font-size: 1rem;
         font-weight: bold;
         line-height: auto; } }
+@media only screen and (max-width: 480px) {
+  body .projects {
+    font-size: .85rem; }
+    body .projects__project .desc {
+      font-size: .75rem; } }
+@font-face {
+  font-family: 'libre_caslon_textregular';
+  src: url("fonts/librecaslontext-regular-webfont.eot");
+  src: url("fonts/librecaslontext-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/librecaslontext-regular-webfont.woff2") format("woff2"), url("fonts/librecaslontext-regular-webfont.woff") format("woff"), url("fonts/librecaslontext-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'libre_caslon_textbold';
+  src: url("fonts/librecaslontext-bold-webfont.eot");
+  src: url("fonts/librecaslontext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/librecaslontext-bold-webfont.woff2") format("woff2"), url("fonts/librecaslontext-bold-webfont.woff") format("woff"), url("fonts/librecaslontext-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 * {
   outline: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'libre_caslon_textregular', serif;
   transition-duration: 0.25s;
   background-color: #fff;
   color: #000; }
@@ -167,6 +184,9 @@ html {
 body {
   margin: 0;
   padding: 0; }
+
+h1, h2, h3 {
+  font-family: "libre_caslon_textbold", serif; }
 
 .section {
   width: 100%;
@@ -230,6 +250,7 @@ hr {
 .bio__text {
   width: 65%;
   padding: 1.5rem;
+  padding-bottom: 2.5rem;
   box-shadow: -7.5px 7.5px 0px #000;
   border-radius: 3px;
   border: 1px solid #000;
@@ -322,18 +343,23 @@ hr {
     box-shadow: -7.5px 7.5px 0px #000;
     border-radius: 3px;
     border: 1px solid #000;
-    margin: 0 1em; }
+    margin: 0 1em;
+    cursor: pointer; }
     .projects__project .icon {
-      width: 75px;
-      height: 75px;
-      margin: 0 auto; }
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      background: transparent; }
+      .projects__project .icon img {
+        width: 100%;
+        height: 100%; }
     .projects__project .name {
       height: 50px;
       font-size: 1.5rem;
       font-weight: bold;
       line-height: 50px; }
     .projects__project .desc {
-      height: 150px;
+      height: 125px;
       overflow: hidden; }
   .projects__more {
     width: 150px;
@@ -356,7 +382,7 @@ hr {
     text-align: left;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: flex-start; }
   .skills__side {
     width: 325px;
     margin: 0 3rem; }
@@ -398,9 +424,11 @@ hr {
     .interests__interest > * {
       height: 100px; }
     .interests__interest .icon {
-      width: 75px;
+      width: 100px;
       padding: .5rem;
       margin: 0 auto; }
+      .interests__interest .icon img {
+        width: 100%; }
     .interests__interest .name {
       font-size: 1.25rem;
       font-weight: bold;
@@ -432,6 +460,7 @@ hr {
     margin: 1rem auto; }
 
 .footer {
+  max-width: 100%;
   min-height: 115px;
   font-size: .75rem;
   margin: 0 auto;

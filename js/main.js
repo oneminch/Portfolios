@@ -132,7 +132,7 @@ const renderProjectData = (projectList) => {
             <div class="icon">
                <img src="${projectList[i].app_icon}" alt="Project Icon"/>
             </div> 
-            <div class="name">${projectList[i].name}</div>
+            <h4 class="name">${projectList[i].name}</h4>
             <div class="desc">${projectList[i].desc}</div>
          </a>
       `;

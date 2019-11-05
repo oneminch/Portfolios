@@ -158,22 +158,22 @@
     body .projects__project .desc {
       font-size: .75rem; } }
 @font-face {
-  font-family: 'libre_caslon_textregular';
-  src: url("fonts/librecaslontext-regular-webfont.eot");
-  src: url("fonts/librecaslontext-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/librecaslontext-regular-webfont.woff2") format("woff2"), url("fonts/librecaslontext-regular-webfont.woff") format("woff"), url("fonts/librecaslontext-regular-webfont.ttf") format("truetype");
+  font-family: 'Metropolis-Regular';
+  src: url("fonts/Metropolis-Regular.eot");
+  src: url("fonts/Metropolis-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Metropolis-Regular.woff2") format("woff2"), url("fonts/Metropolis-Regular.woff") format("woff"), url("fonts/Metropolis-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'libre_caslon_textbold';
-  src: url("fonts/librecaslontext-bold-webfont.eot");
-  src: url("fonts/librecaslontext-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/librecaslontext-bold-webfont.woff2") format("woff2"), url("fonts/librecaslontext-bold-webfont.woff") format("woff"), url("fonts/librecaslontext-bold-webfont.ttf") format("truetype");
+  font-family: 'Metropolis-Bold';
+  src: url("fonts/Metropolis-Bold.eot");
+  src: url("fonts/Metropolis-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Metropolis-Bold.woff2") format("woff2"), url("fonts/Metropolis-Bold.woff") format("woff"), url("fonts/Metropolis-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 * {
   outline: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'libre_caslon_textregular', serif;
+  font-family: 'Metropolis-Regular', sans-serif;
   transition-duration: 0.25s;
   background-color: #fff;
   color: #000; }
@@ -185,8 +185,9 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3 {
-  font-family: "libre_caslon_textbold", serif; }
+h1, h2, h3, h4 {
+  margin: .5rem 0;
+  font-family: 'Metropolis-Bold', sans-serif; }
 
 .section {
   width: 100%;

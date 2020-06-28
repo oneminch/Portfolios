@@ -15,7 +15,7 @@ const data_json = {
 				"I helped design and develop a landing page as well as a logo for an app by independent iOS developer.",
 			link: [
 				/* "DDG", "https://ddg.gg" */
-			]
+			],
 		},
 		{
 			id: 2,
@@ -23,7 +23,7 @@ const data_json = {
 			date: ["Jul '17", "Present"],
 			desc:
 				"I like to work on small projects to solidify new concepts I'm learning.",
-			link: ["@GitHub", "https://github.com/oneminch?tab=repositories"]
+			link: ["@GitHub", "https://github.com/oneminch?tab=repositories"],
 		},
 		{
 			id: 3,
@@ -31,7 +31,7 @@ const data_json = {
 			date: ["Sep '19", "Feb '20"],
 			desc:
 				"As a Software Developer Intern at the OpenGenus Foundation, I was mainly involved in writing articles related to various web development topics and help in the development of a web extension for the service.",
-			link: ["Profile", "https://iq.opengenus.org/author/durg"]
+			link: ["Profile", "https://iq.opengenus.org/author/durg"],
 		},
 		{
 			id: 4,
@@ -39,8 +39,8 @@ const data_json = {
 			date: ["Aug '17", "Dec '21 (exp.)"],
 			desc:
 				"I'm currently a junior at Tennessee Tech University majoring in computer science; I transferred half-way from a 2 year college at which I majored in Information Management Systems.",
-			link: ["Homepage", "https://tntech.edu"]
-		}
+			link: ["Homepage", "https://tntech.edu"],
+		},
 	],
 
 	// Projects data list
@@ -51,23 +51,23 @@ const data_json = {
 			url: "https://oneminch.github.io/Newsfeed/",
 			app_icon: "img/logos/newsfeed.svg",
 			desc:
-				"A news app that loads the latest 20 headlines from an API based on a category selected."
+				"A news app that loads the latest 20 headlines from an API based on a category selected.",
 		},
 		{
 			name: "Encrypted List",
 			url: "https://oneminch.github.io/encryptedlist/",
 			app_icon: "img/logos/encryptedlist.svg",
 			desc:
-				"A collective list of apps and services offering end-to-end encryption with filtering options."
+				"A collective list of apps and services offering end-to-end encryption with filtering options.",
 		},
 		{
 			name: "Dolist",
 			url: "https://oneminch.github.io/Dolist/",
 			app_icon: "img/logos/dolist.svg",
 			desc:
-				"A to-do app build with jQuery with ability to add, complete, edit and delete tasks (First JavaScript Project)"
-		}
-	]
+				"A to-do app build with jQuery with ability to add, complete, edit and delete tasks (First JavaScript Project)",
+		},
+	],
 };
 
 // Renders text with current year to footer

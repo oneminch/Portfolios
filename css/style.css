@@ -175,8 +175,8 @@
   text-decoration: none;
   font-family: 'Metropolis-Regular', sans-serif;
   transition-duration: 0.25s;
-  background-color: #fff;
-  color: #000; }
+  background-color: #121212;
+  color: #f1f1f1; }
 
 html {
   font-size: 100%; }
@@ -185,7 +185,10 @@ body {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: .5rem 0;
   font-family: 'Metropolis-Bold', sans-serif; }
 
@@ -197,7 +200,7 @@ h1, h2, h3, h4 {
 hr {
   width: 50%;
   max-width: 960px;
-  border: .5px solid #bbb;
+  border: .5px solid #4d4d4d;
   margin: 25px auto;
   text-align: center; }
 
@@ -232,16 +235,20 @@ hr {
       width: 45px;
       min-width: 45px;
       height: 45px;
-      box-shadow: -4px 4px 0px #000;
+      box-shadow: -4px 4px 0px #222222;
       border-radius: 3px;
       margin: 7.5px;
-      border: 1px solid #000;
+      border: 2px solid #3b3b3b;
+      background: #f1f1f1;
       display: flex;
       justify-content: center;
       align-items: center; }
+      .intro__social > *:hover {
+        box-shadow: -5px 5px 0px #edae49; }
       .intro__social > * img {
         width: 30px;
-        height: 30px; }
+        height: 30px;
+        background: #f1f1f1; }
 
 .scroll-down {
   width: 100px;
@@ -253,9 +260,9 @@ hr {
   width: 65%;
   padding: 1.5rem;
   padding-bottom: 2.5rem;
-  box-shadow: -7.5px 7.5px 0px #000;
+  box-shadow: -7.5px 7.5px 0px #222222;
   border-radius: 3px;
-  border: 1px solid #000;
+  border: 2px solid #3b3b3b;
   margin: 0 auto 1rem auto; }
 .bio__icon {
   width: 75px;
@@ -278,8 +285,8 @@ hr {
     width: 65%;
     min-height: 150px;
     padding: .75rem;
-    border: 1px solid #000;
-    box-shadow: -7.5px 7.5px 0px #000;
+    border: 2px solid #3b3b3b;
+    box-shadow: -7.5px 7.5px 0px #222222;
     border-radius: 3px; }
     .experience__current > * {
       width: 90%;
@@ -290,8 +297,13 @@ hr {
       line-height: 40px;
       display: block;
       margin-top: 1rem;
-      border: 1px solid #000;
+      border: 2px solid #3b3b3b;
+      background-color: #3b3b3b;
       border-radius: 3px; }
+      .experience__current__link:hover {
+        border-color: #edae49;
+        background-color: #edae49;
+        color: #121212; }
       .experience__current__link--inexistent {
         display: none; }
   .experience__list {
@@ -308,7 +320,7 @@ hr {
       cursor: pointer;
       margin: 0 .5rem;
       border-radius: 50%;
-      border: 1px solid #000;
+      border: 2px solid #3b3b3b;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -320,10 +332,10 @@ hr {
         border-radius: 50%;
         display: block; }
       .experience__list__item--active span {
-        background-color: #000; }
+        background-color: #f1f1f1; }
     .experience__list hr {
       width: 100%;
-      border: 1px solid #000;
+      border: 1px solid #f1f1f1;
       border-radius: 1px;
       margin: 0 auto;
       position: relative;
@@ -342,11 +354,13 @@ hr {
   .projects__project {
     width: 250px;
     padding: 1rem;
-    box-shadow: -7.5px 7.5px 0px #000;
+    box-shadow: -7.5px 7.5px 0px #222222;
     border-radius: 3px;
-    border: 1px solid #000;
+    border: 2px solid #3b3b3b;
     margin: 0 2em;
     cursor: pointer; }
+    .projects__project:hover {
+      box-shadow: -8.5px 8.5px 0px #edae49; }
     .projects__project .icon {
       width: 60px;
       height: 60px;
@@ -368,11 +382,15 @@ hr {
     height: 50px;
     display: block;
     cursor: pointer;
-    border: 1px solid #000;
-    box-shadow: -4px 4px 0px #000;
+    border: 2px solid #3b3b3b;
+    background-color: #3b3b3b;
     border-radius: 3px;
     line-height: 47.5px;
     margin: 1.5rem auto; }
+    .projects__more:hover {
+      border-color: #edae49;
+      background-color: #edae49;
+      color: #121212; }
 
 .skills {
   text-align: center;
@@ -391,20 +409,21 @@ hr {
   .skills__list {
     width: 325px;
     padding: 1rem;
-    box-shadow: -7.5px 7.5px 0px #000;
+    box-shadow: -7.5px 7.5px 0px #222222;
     border-radius: 3px;
-    border: 1px solid #000; }
+    border: 2px solid #3b3b3b; }
     .skills__list li {
       list-style-type: square; }
   .skills__icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #121212;
     padding: .75rem;
-    margin: -25px 0 0 -25px; }
+    margin: -25px 0 0 -25px;
+    border: 2px solid #3b3b3b; }
     .skills__icon > * {
-      background-color: #000; }
+      background-color: #121212; }
 
 .interests {
   width: 100%;
@@ -419,9 +438,9 @@ hr {
     width: 175px;
     height: 225px;
     padding: .75rem;
-    box-shadow: -7.5px 7.5px 0px #000;
+    box-shadow: -7.5px 7.5px 0px #222222;
     border-radius: 3px;
-    border: 1px solid #000;
+    border: 2px solid #3b3b3b;
     margin: 0 3rem; }
     .interests__interest > * {
       height: 100px; }
@@ -453,10 +472,10 @@ hr {
     width: 150px;
     height: 50px;
     cursor: not-allowed;
-    color: #bbb;
-    box-shadow: -4px 4px 0px #bbb;
+    color: #353535;
+    box-shadow: -4px 4px 0px #353535;
     border-radius: 3px;
-    border: 1px solid #bbb;
+    border: 2px solid #353535;
     font-weight: bold;
     line-height: 47.5px;
     margin: 1rem auto; }
@@ -472,16 +491,17 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  background-color: #000; }
+  background-color: #121212;
+  border-top: 2px solid #3b3b3b; }
   .footer__text {
-    color: #fff;
+    color: #f1f1f1;
     background-color: transparent; }
   .footer a {
-    background-color: #000; }
+    background-color: #121212; }
+    .footer a:hover {
+      box-shadow: none; }
     .footer a img {
-      background-color: #000;
+      background-color: #121212;
       width: 75px;
       height: auto; }
 

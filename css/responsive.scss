@@ -1,18 +1,14 @@
-
-$darkColor: #000; // Dark color: Black
-$lightColor: #fff; // Light color: White
-$active: 1px solid $darkColor;  // Border
 $roundCorners: 3px; // Round corner radius
-$tinyShadow: -4px 4px 0px $darkColor; // Box shadow for small containers
-$bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
 
 // Screen size: < 1024px
 @media only screen and (max-width: 1024px) {
+
    // Projects: Top Projects
    body .projects {
       padding: 0 1rem;
-      &__container {
-      }
+
+      &__container {}
+
       &__project {
          width: 225px;
       }
@@ -22,6 +18,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
 // Screen size: < 900px
 @media only screen and (max-width: 900px) {
    body {
+
       // First Introduction
       .intro {
          height: auto;
@@ -30,10 +27,12 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
          justify-content: start;
          align-items: center;
          padding: 1.5em 0;
+
          >* {
             width: 90%;
             margin: 0;
          }
+
          // Intro Right: Profile Image/Illustration
          &__img {
             img {
@@ -41,13 +40,16 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
                height: 125px;
             }
          }
+
          // Intro Left:  Name, Title & Social
          &__text {
             text-align: center;
          }
+
          // Social Accounts
          &__social {
-            width: auto; height: 45px;
+            width: auto;
+            height: 45px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -65,6 +67,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
          &__text {
             width: 80%;
          }
+
          &__icon {
             width: 50px;
             height: 50px;
@@ -77,6 +80,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
          &__current {
             width: 80%;
          }
+
          &__list {
             width: 80%;
          }
@@ -85,22 +89,27 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
       // Projects: Top Projects
       .projects {
          padding: 0 1rem;
+
          &__container {
             margin: .5rem 0 1rem 0;
          }
+
          &__project {
             width: 200px;
             margin: 0 1.5rem;
+
             .icon {
                width: 50px;
                height: 50px;
             }
+
             .name {
                height: 35px;
                font-size: 1rem;
                font-weight: bold;
                line-height: 35px;
             }
+
             .desc {
                height: 135px;
                overflow: hidden;
@@ -117,20 +126,27 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             justify-content: center;
             align-items: center;
          }
-         &__side { width: 75%; }
-         &__list { width: 100%; }
+
+         &__side {
+            width: 75%;
+         }
+
+         &__list {
+            width: 100%;
+         }
       }
 
       // Interests
       .interests {
          width: 100%;
          padding: 0 1rem;
+
          &__interest {
             margin: 0 1.25rem;
          }
       }
    }
-      
+
 }
 
 // Screen size: < 768px
@@ -139,12 +155,13 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
       hr {
          margin: 15px auto;
       }
-      
+
       // Bio Container
       .bio {
          &__text {
             width: 90%;
          }
+
          &__icon {
             width: 50px;
             height: 50px;
@@ -157,6 +174,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
          &__current {
             width: 90%;
          }
+
          &__list {
             width: 90%;
          }
@@ -165,6 +183,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
       // Projects: Top Projects
       .projects {
          padding: 0 1rem;
+
          &__container {
             display: flex;
             flex-direction: column;
@@ -172,6 +191,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             align-items: center;
             margin: .5rem 0 1rem 0;
          }
+
          &__project {
             width: 90%;
             height: 125px;
@@ -179,12 +199,14 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             margin: .75rem auto;
             position: relative;
             text-align: left;
+
             >* {
                display: inline;
                position: absolute;
                padding: .25rem;
                border-radius: $roundCorners + 2px;
             }
+
             .icon {
                width: 115px; // (125px - 10px (padding))
                height: 115px; // (125px - 10px (padding))
@@ -192,6 +214,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
                left: 5px; // (125px - padding/2)
                padding: 1.5rem;
             }
+
             .name {
                height: 45px; // (50px - 5px (padding/2))
                font-size: 1rem;
@@ -199,6 +222,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
                top: 5px;
                left: 120px;
             }
+
             .desc {
                padding-right: 1.25rem;
                height: 70px; // (75px - padding/2)
@@ -212,12 +236,15 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
 
       // Skills: List of skills and tools
       .skills {
-         &__side { width: 85%; }
+         &__side {
+            width: 85%;
+         }
       }
 
       // Interests
       .interests {
          padding: 0 1rem;
+
          &__container {
             display: flex;
             flex-direction: column;
@@ -225,6 +252,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             align-items: center;
             margin: .5rem 0 1rem 0;
          }
+
          &__interest {
             width: 75%;
             height: 75px;
@@ -233,14 +261,17 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             display: flex;
             justify-content: center;
             align-items: center;
+
             >* {
                height: 65px;
                margin: 0 1rem;
             }
+
             .icon {
                margin: 0;
                width: 65px;
             }
+
             .name {
                width: 125px;
                font-size: 1rem;
@@ -249,7 +280,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
             }
          }
       }
-   }     
+   }
 }
 
 // Screen size: < 480px
@@ -257,6 +288,7 @@ $bigShadow: -7.5px 7.5px 0px $darkColor; // Box shadow for bigger containers
    body {
       .projects {
          font-size: .85rem;
+
          &__project {
             .desc {
                font-size: .75rem;

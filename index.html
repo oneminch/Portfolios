@@ -226,8 +226,24 @@
    <!-- Section Break -->
    <hr>
    <!-- Contact me -->
-   <div class="section contact">
-      <div class="contact__btn">Contact</div>
+   <div class="section contact hide-form">
+      <div class="contact-btn">Contact</div>
+      <form action="https://formspree.io/mleppjrl" method="POST" class="contact__form">
+         <label for="name" class="contact__name-label">Name</label>
+         <input type="text" class="contact__name" id="name" placeholder="Introduce yourself" name="name" required />
+         <label for="email" class="contact__email-label">Email</label>
+         <input type="email" class="contact__name" id="email" placeholder="someone@example.com" name="_replyto"
+            required />
+         <label for="message" class="contact__message-label">Message</label>
+         <textarea name="message" class="contact__message" id="message" cols="30" rows="10" placeholder="Message..."
+            required></textarea>
+         <div class="contact__buttons">
+            <input type="submit" class="contact__submit" value="Send" />
+            <input type="reset" class="contact__close" value="Cancel" />
+            <!-- <button class="contact__send">Send</button>
+            <button class="contact__close">Cancel</button> -->
+         </div>
+      </form>
    </div>
    <!-- Footer -->
    <div class="section footer">
@@ -241,7 +257,7 @@
    </div>
    <!-- Analytics & Javascript -->
    <script src="js/main.js"></script>
-   <script type="text/javascript" src = "https://api.123metrics.com/123metrics.js" async defer></script>
+   <script type="text/javascript" src="https://api.123metrics.com/123metrics.js" async defer></script>
 </body>
 
 </html>

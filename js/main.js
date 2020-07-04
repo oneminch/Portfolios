@@ -2,6 +2,9 @@ const all_exps = document.querySelectorAll(".experience__list__item"); // List o
 const current_exp = document.querySelector(".experience__current"); // My current up to date experience
 const footer_text = document.querySelector(".footer__text"); // Footer text with copyright content
 const projects__container = document.querySelector(".projects__container");
+const contact_form = document.querySelector(".contact"); // Contact form
+const contact_show = document.querySelector(".contact-btn");
+const contact_close = document.querySelector(".contact__close");
 
 const data_json = {
 	// Experience data list
@@ -170,3 +173,14 @@ all_exps.forEach((el) =>
 		}
 	})
 );
+
+// Toggle to show/hide contact form
+contact_show.addEventListener("click", () => {
+	contact_form.classList.add("show-form");
+	contact_form.classList.remove("hide-form");
+});
+
+contact_close.addEventListener("click", () => {
+	contact_form.classList.remove("show-form");
+	contact_form.classList.add("hide-form");
+});

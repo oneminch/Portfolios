@@ -463,22 +463,92 @@ hr {
     margin: 1.5rem auto; }
 
 .contact {
-  width: 100%;
-  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .contact__btn {
+  align-items: center;
+  width: 100%;
+  max-width: 100%; }
+
+.hide-form {
+  text-align: center; }
+  .hide-form .contact-btn {
     width: 150px;
     height: 50px;
-    cursor: not-allowed;
-    color: #353535;
-    box-shadow: -4px 4px 0px #353535;
+    cursor: pointer;
+    color: #f1f1f1;
+    background-color: #3b3b3b;
     border-radius: 3px;
-    border: 2px solid #353535;
+    border: 2px solid #3b3b3b;
     font-weight: bold;
     line-height: 47.5px;
-    margin: 1rem auto; }
+    margin: 1.5rem auto; }
+    .hide-form .contact-btn:hover {
+      border-color: #edae49;
+      background-color: #edae49;
+      color: #121212; }
+  .hide-form .contact__form {
+    display: none; }
+
+.show-form {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  background-color: rgba(18, 18, 18, 0.9); }
+  .show-form .contact-btn {
+    display: none; }
+  .show-form .contact__form {
+    width: 80%;
+    min-width: 350px;
+    max-width: 768px;
+    padding: 1rem;
+    color: #f1f1f1;
+    background-color: #121212;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 2px solid #3b3b3b;
+    text-align: left; }
+    .show-form .contact__form > * {
+      width: 75%;
+      display: block;
+      margin: 1rem auto;
+      border-radius: 3px;
+      box-shadow: none; }
+  .show-form input,
+  .show-form textarea {
+    height: 40px;
+    padding: 5px;
+    text-indent: 10px;
+    color: #f1f1f1;
+    border: 2px solid #3b3b3b;
+    font-size: 0.9rem;
+    background-color: #121212; }
+    .show-form input::placeholder,
+    .show-form textarea::placeholder {
+      color: #3b3b3b;
+      opacity: 1; }
+  .show-form textarea {
+    height: 150px;
+    resize: none; }
+  .show-form .contact__buttons {
+    width: 75%;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .show-form .contact__buttons > * {
+      width: 100px;
+      border-radius: 3px;
+      cursor: pointer;
+      border: 2px solid #3b3b3b;
+      color: #f1f1f1; }
+    .show-form .contact__buttons input:first-child {
+      border: 2px solid #121212;
+      background-color: #edae49 !important;
+      color: #121212; }
 
 .footer {
   max-width: 100%;

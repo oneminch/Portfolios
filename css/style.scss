@@ -8,6 +8,7 @@ $darkColor: #121212; // Light color: White
 $lightColor: #f1f1f1; // Dark color: Black
 $shadowDrop: #222222; // Drop shadow
 $mediumColor: #3b3b3b; // Grey in between
+$formBkg: rgba(18, 18, 18, 0.90); // Form background
 
 $roundCorners: 3px; // Round corner radius
 $active: 2px solid $mediumColor; // Active Border
@@ -463,25 +464,123 @@ hr {
 
 // Contact
 .contact {
-   width: 100%;
-   text-align: center;
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 100%;
+   max-width: 100%;
+}
 
-   &__btn {
+.hide-form {
+   text-align: center;
+
+   .contact-btn {
       width: 150px;
       height: 50px;
-      cursor: not-allowed;
-      color: $inactive;
-      box-shadow: $inactivShadow;
+      cursor: pointer;
+      color: $lightColor;
+      background-color: $mediumColor;
       border-radius: $roundCorners;
-      border: $disabled;
+      border: $active;
       font-weight: bold;
       line-height: 47.5px;
-      margin: 1rem auto;
+      margin: 1.5rem auto;
+
+      &:hover {
+         border-color: $mOrange;
+         background-color: $mOrange;
+         color: $darkColor;
+      }
+   }
+
+   .contact__form {
+      display: none;
    }
 }
+
+.show-form {
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   // max-width: 100%;
+   margin: 0;
+   background-color: $formBkg;
+
+   .contact-btn {
+      display: none;
+   }
+
+   // Contact form
+   .contact__form {
+      width: 80%;
+      min-width: 350px;
+      max-width: 768px;
+      padding: 1rem;
+      color: $lightColor;
+      background-color: $darkColor;
+      border-radius: $roundCorners;
+      box-shadow: none;
+      border: $active;
+      text-align: left;
+
+      >* {
+         width: 75%;
+         display: block;
+         margin: 1rem auto;
+         border-radius: $roundCorners;
+         box-shadow: none;
+      }
+   }
+
+   // Input fields
+   input,
+   textarea {
+      height: 40px;
+      padding: 5px;
+      text-indent: 10px;
+      color: $lightColor;
+      border: $active;
+      font-size: 0.9rem;
+      background-color: $darkColor;
+
+      &::placeholder {
+         color: $mediumColor;
+         opacity: 1;
+      }
+   }
+
+   textarea {
+      height: 150px;
+      resize: none;
+   }
+
+   .contact__buttons {
+      width: 75%;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      >* {
+         width: 100px;
+         border-radius: $roundCorners;
+         cursor: pointer;
+         border: $active;
+         color: $lightColor;
+      }
+
+      input:first-child {
+         border: 2px solid $darkColor;
+         background-color: $mOrange !important;
+         color: $darkColor;
+      }
+   }
+
+}
+
 
 // Footer
 .footer {

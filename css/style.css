@@ -171,6 +171,9 @@
   font-style: normal; }
 * {
   outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Metropolis-Regular', sans-serif;
@@ -523,7 +526,7 @@ hr {
     text-indent: 10px;
     color: #f1f1f1;
     border: 2px solid #3b3b3b;
-    font-size: 0.9rem;
+    font-size: 16px;
     background-color: #121212; }
     .show-form input::placeholder,
     .show-form textarea::placeholder {

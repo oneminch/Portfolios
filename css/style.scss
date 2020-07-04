@@ -46,6 +46,9 @@ $bigHoverShadow: -8.5px 8.5px 0px $mOrange; // Box shadow on hover for bigger co
 
 * {
    outline: none;
+   appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
    box-sizing: border-box;
    text-decoration: none;
    font-family: 'Metropolis-Regular', sans-serif;
@@ -542,7 +545,7 @@ hr {
       text-indent: 10px;
       color: $lightColor;
       border: $active;
-      font-size: 0.9rem;
+      font-size: 16px;
       background-color: $darkColor;
 
       &::placeholder {

@@ -33,7 +33,7 @@ const data_json = {
 			name: "OpenGenus Foundation 📝",
 			date: ["Sep '19", "Feb '20"],
 			desc:
-				"As a Software Developer Intern at the OpenGenus Foundation, I was mainly involved in writing articles related to various web development topics and help in the development of a web extension for the service.",
+				"As a Software Developer Intern at the OpenGenus Foundation, I was mainly involved in writing articles related to various web development topics.",
 			link: ["Profile", "https://iq.opengenus.org/author/durg"],
 		},
 		{

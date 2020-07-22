@@ -51,21 +51,21 @@ const data_json = {
 	proj_data: [
 		{
 			name: "Newsfeed",
-			url: "https://oneminch.github.io/Newsfeed/",
+			url: "https://oneminch.dev/newsfeed/",
 			app_icon: "img/logos/newsfeed.svg",
 			desc:
 				"A news app that loads the latest 20 headlines using the NewsAPI based on a category selected.",
 		},
 		{
 			name: "Encrypted List",
-			url: "https://oneminch.github.io/encryptedlist/",
+			url: "https://oneminch.dev/encryptedlist/",
 			app_icon: "img/logos/encryptedlist.svg",
 			desc:
 				"A collective list of apps and services offering end-to-end encryption with filtering options.",
 		},
 		{
 			name: "Dolist",
-			url: "https://oneminch.github.io/Dolist/",
+			url: "https://oneminch.dev/dolist/",
 			app_icon: "img/logos/dolist.svg",
 			desc:
 				"A to-do app build with jQuery with ability to add, complete, edit and delete tasks (First JavaScript Project)",

@@ -57,7 +57,7 @@ const data_json = {
 				"A news app that loads the latest 20 headlines using the NewsAPI based on a category selected.",
 		},
 		{
-			name: "Encrypted List",
+			name: "EncryptedList",
 			url: "https://oneminch.dev/encryptedlist/",
 			app_icon: "img/logos/encryptedlist.svg",
 			desc:
@@ -68,7 +68,14 @@ const data_json = {
 			url: "https://oneminch.dev/dolist/",
 			app_icon: "img/logos/dolist.svg",
 			desc:
-				"A to-do app build with jQuery with ability to add, complete, edit and delete tasks (First JavaScript Project)",
+				"A to-do app built with jQuery with ability to add, complete, edit and delete tasks (First JS Project)",
+		},
+		{
+			name: "Timer",
+			url: "https://oneminch.dev/timer/",
+			app_icon: "img/logos/timer.png",
+			desc:
+				"A simple task-based timer app: records time and saves it to a certain task.",
 		},
 	],
 };

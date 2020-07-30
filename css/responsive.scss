@@ -4,13 +4,61 @@ $roundCorners: 3px; // Round corner radius
 @media only screen and (max-width: 1024px) {
 
    // Projects: Top Projects
-   body .projects {
-      padding: 0 1rem;
+   body {
 
-      &__container {}
+      // Projects: Top Projects
+      .projects {
+         width: 75%;
+         padding: 0 1rem;
 
-      &__project {
-         width: 225px;
+         &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem 0 1rem 0;
+         }
+
+         &__project {
+            width: 90%;
+            height: 125px;
+            padding: 10px; // used for absolute positioning of children
+            margin: .75rem auto;
+            position: relative;
+            text-align: left;
+
+            >* {
+               display: inline;
+               position: absolute;
+               padding: .25rem;
+               border-radius: $roundCorners + 2px;
+            }
+
+            .icon {
+               width: 115px; // (125px - 10px (padding))
+               height: 115px; // (125px - 10px (padding))
+               top: 5px; // (125px - padding/2)
+               left: 5px; // (125px - padding/2)
+               padding: 1.5rem;
+            }
+
+            .name {
+               height: 45px; // (50px - 5px (padding/2))
+               font-size: 1rem;
+               font-weight: bold;
+               top: 5px;
+               left: 120px;
+            }
+
+            .desc {
+               padding-right: 1.25rem;
+               height: 70px; // (75px - padding/2)
+               overflow: hidden;
+               font-size: .9rem;
+               top: 50px; // (45px + padding/2)
+               left: 120px; // (125px - padding/2)
+            }
+         }
       }
    }
 }
@@ -88,33 +136,7 @@ $roundCorners: 3px; // Round corner radius
 
       // Projects: Top Projects
       .projects {
-         padding: 0 1rem;
-
-         &__container {
-            margin: .5rem 0 1rem 0;
-         }
-
-         &__project {
-            width: 200px;
-            margin: 0 1.5rem;
-
-            .icon {
-               width: 50px;
-               height: 50px;
-            }
-
-            .name {
-               height: 35px;
-               font-size: 1rem;
-               font-weight: bold;
-               line-height: 35px;
-            }
-
-            .desc {
-               height: 135px;
-               overflow: hidden;
-            }
-         }
+         width: 100%;
       }
 
       // Skills: List of skills and tools
@@ -177,60 +199,6 @@ $roundCorners: 3px; // Round corner radius
 
          &__list {
             width: 90%;
-         }
-      }
-
-      // Projects: Top Projects
-      .projects {
-         padding: 0 1rem;
-
-         &__container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: .5rem 0 1rem 0;
-         }
-
-         &__project {
-            width: 90%;
-            height: 125px;
-            padding: 10px; // used for absolute positioning of children
-            margin: .75rem auto;
-            position: relative;
-            text-align: left;
-
-            >* {
-               display: inline;
-               position: absolute;
-               padding: .25rem;
-               border-radius: $roundCorners + 2px;
-            }
-
-            .icon {
-               width: 115px; // (125px - 10px (padding))
-               height: 115px; // (125px - 10px (padding))
-               top: 5px; // (125px - padding/2)
-               left: 5px; // (125px - padding/2)
-               padding: 1.5rem;
-            }
-
-            .name {
-               height: 45px; // (50px - 5px (padding/2))
-               font-size: 1rem;
-               font-weight: bold;
-               top: 5px;
-               left: 120px;
-            }
-
-            .desc {
-               padding-right: 1.25rem;
-               height: 70px; // (75px - padding/2)
-               overflow: hidden;
-               font-size: .9rem;
-               top: 50px; // (45px + padding/2)
-               left: 120px; // (125px - padding/2)
-            }
          }
       }
 

@@ -112,7 +112,7 @@ const loadExpData = (id) => {
 			if (item.link.length === 0) {
 				markup += `<a href="#" class="experience__current__link experience__current__link--inexistent">Inexistent</a>`;
 			} else {
-				markup += `<a href="${item.link[1]}" target="_blank" class="experience__current__link">${item.link[0]}</a>`;
+				markup += `<a href="${item.link[1]}" rel="noopener" target="_blank" class="experience__current__link">${item.link[0]}</a>`;
 			}
 		}
 	});
@@ -147,7 +147,7 @@ const renderProjectData = (projectList) => {
 	let markup = ``;
 	for (let i = 0; i < projectList.length; i++) {
 		markup += `
-         <a href="${projectList[i].url}" target="_blank" class="projects__project">
+         <a href="${projectList[i].url}" target="_blank" rel="noopener" class="projects__project">
             <div class="icon">
                <img src="${projectList[i].app_icon}" alt="Project Icon"/>
             </div> 

@@ -41,7 +41,7 @@ const data_json = {
 			name: "Tennessee Tech 🎓",
 			date: ["Aug '17", "Dec '21 (exp.)"],
 			desc:
-				"I'm currently a junior at Tennessee Tech University majoring in computer science; I transferred half-way from a 2 year college at which I majored in Information Management Systems.",
+				"I'm currently a senior at Tennessee Tech University majoring in computer science; I transferred half-way from a 2 year college at which I majored in Information Management Systems.",
 			link: ["Homepage", "https://tntech.edu"],
 		},
 	],

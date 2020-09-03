@@ -63,13 +63,13 @@ const data_json = {
 			desc:
 				"A collective list of apps and services offering end-to-end encryption with filtering options.",
 		},
-		{
-			name: "Dolist",
-			url: "https://oneminch.dev/dolist/",
-			app_icon: "img/logos/dolist.svg",
-			desc:
-				"A to-do app built with jQuery with ability to add, complete, edit and delete tasks (First JS Project)",
-		},
+		// {
+		// 	name: "Dolist",
+		// 	url: "https://oneminch.dev/dolist/",
+		// 	app_icon: "img/logos/dolist.svg",
+		// 	desc:
+		// 		"A to-do app built with jQuery with ability to add, complete, edit and delete tasks (First JS Project)",
+		// },
 		{
 			name: "Timer",
 			url: "https://oneminch.dev/timer/",

@@ -89,6 +89,26 @@ hr {
    text-align: center;
 }
 
+.banner {
+   text-align: center;
+   text-decoration: underline;
+   height: 3rem;
+   width: 65%;
+   max-width: 480px;
+   padding: 0;
+   // padding-bottom: 2.5rem;
+   box-shadow: $bigShadow;
+   border-radius: $roundCorners;
+   border: $active;
+   box-sizing: content-box;
+   margin: 2rem auto;
+   h3 {
+      margin: 0;
+      height: 3rem;
+      line-height: 3rem;
+   }
+}
+
 // First Introduction
 .intro {
    height: 25rem;

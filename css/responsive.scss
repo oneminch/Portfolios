@@ -254,6 +254,9 @@ $roundCorners: 3px; // Round corner radius
 // Screen size: < 480px
 @media only screen and (max-width: 480px) {
    body {
+      .banner {
+         width: 90%;
+      }
       .projects {
          font-size: .85rem;
 

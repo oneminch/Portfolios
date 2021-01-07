@@ -50,18 +50,25 @@ const data_json = {
 	// Each data: id, name, url, image url & description
 	proj_data: [
 		{
+			name: "EncryptedList",
+			url: "https://encryptedlist.xyz/",
+			app_icon: "img/logos/encryptedlist.svg",
+			desc:
+				"A collective list of products & services that offer zero-knowledge or end-to-end encryption.",
+		},
+		{
+			name: "Deadlines",
+			url: "https://deadlines.vercel.app/",
+			app_icon: "img/logos/deadlines.png",
+			desc:
+				"A simple, offline deadline tracker made with Vue.js and localForage.",
+		},
+		{
 			name: "Newsfeed",
 			url: "https://oneminch.dev/newsfeed/",
 			app_icon: "img/logos/newsfeed.svg",
 			desc:
 				"A news app that loads the latest 20 headlines using the NewsAPI based on a category selected.",
-		},
-		{
-			name: "EncryptedList",
-			url: "https://oneminch.dev/encryptedlist/",
-			app_icon: "img/logos/encryptedlist.svg",
-			desc:
-				"A collective list of apps and services offering end-to-end encryption with filtering options.",
 		},
 		// {
 		// 	name: "Dolist",
@@ -70,13 +77,6 @@ const data_json = {
 		// 	desc:
 		// 		"A to-do app built with jQuery with ability to add, complete, edit and delete tasks (First JS Project)",
 		// },
-		{
-			name: "Timer",
-			url: "https://oneminch.dev/timer/",
-			app_icon: "img/logos/timer.png",
-			desc:
-				"A simple task-based timer app: records time and saves it to a certain task.",
-		},
 	],
 };
 

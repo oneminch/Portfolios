@@ -85,10 +85,8 @@ const footerText = () => {
 	let d = new Date();
 
 	let markup = `
-      Designed && Coded by Me
-      <br>
-      &copy; ${d.getFullYear()}
-   `;
+            &copy; ${d.getFullYear()}
+        `;
 	footer_text.innerHTML = markup;
 };
 

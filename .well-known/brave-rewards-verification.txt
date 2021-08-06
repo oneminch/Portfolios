@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: oneminch.dev
+Token: 8c9847a1a9246a8ee0d1a432f1ec1de0d4e701c8eff985d80a503972f4538898

@@ -258,6 +258,16 @@
 	<div class="section contact hide-form">
 		<div class="contact-btn">Contact</div>
 		<form action="https://submit-form.com/Fkj8bLmM" method="POST" accept-charset="UTF-8" class="contact__form">
+
+		<!-- Redirect back to homepage on success -->
+		<input
+			type="hidden"
+			name="_redirect"
+			value="https://oneminch.dev"
+		/>
+		<input type="hidden" name="_append" value="false" />
+
+
 			<label for="name" class="contact__name-label">Name</label>
 			<input type="text" class="contact__name" id="name" placeholder="Introduce yourself" name="name" required />
 			<label for="email" class="contact__email-label">Email</label>

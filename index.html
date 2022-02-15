@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+	<!-- hCaptcha widget -->
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	<title>
 		Dawit - Developer
 	</title>
@@ -255,7 +257,7 @@
 	<!-- Contact me -->
 	<div class="section contact hide-form">
 		<div class="contact-btn">Contact</div>
-		<form action="https://formcarry.com/s/MWJScl_HBY" method="POST" accept-charset="UTF-8" class="contact__form">
+		<form action="https://submit-form.com/Fkj8bLmM" method="POST" accept-charset="UTF-8" class="contact__form">
 			<label for="name" class="contact__name-label">Name</label>
 			<input type="text" class="contact__name" id="name" placeholder="Introduce yourself" name="name" required />
 			<label for="email" class="contact__email-label">Email</label>
@@ -264,8 +266,10 @@
 			<label for="message" class="contact__message-label">Message</label>
 			<textarea name="message" class="contact__message" id="message" cols="30" rows="10" placeholder="Message..."
 				required></textarea>
+
+			<div class="h-captcha" data-sitekey="e610dca7-9edb-4289-9bc5-22b72d9d03af"></div>
+
 			<div class="contact__buttons">
-				<input type="hidden" name="_gotcha">
 				<input type="submit" class="contact__submit" value="Send" />
 				<input type="reset" class="contact__close" value="Cancel" />
 			</div>

@@ -12,8 +12,8 @@ const data_json = {
 	exp_data: [
 		{
 			id: 1,
-			name: "Freelance Web Designer 📱",
-			date: ["Sep '17", "Nov '17"],
+			name: "Freelance Web Developer 📱",
+			date: ["Sep '17", "Jun '19"],
 			desc:
 				"I helped design and develop a landing page as well as a logo for an app by independent iOS developer.",
 			link: [

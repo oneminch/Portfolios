@@ -15,17 +15,15 @@ const data_json = {
 			name: "Freelance Web Developer 📱",
 			date: ["Sep '17", "Jun '19"],
 			desc:
-				"I helped design and develop a landing page as well as a logo for an app by independent iOS developer.",
-			link: [
-				/* "DDG", "https://ddg.gg" */
-			],
+				"I designed and developed a landing page and a logo for a photo editing app made by an independent iOS developer. I also made portfolio websites for fellow students in college.",
+			link: [],
 		},
 		{
 			id: 2,
 			name: "Mini-Projects 💻",
 			date: ["Jul '17", "Present"],
 			desc:
-				"I like to work on small projects to solidify new concepts I'm learning.",
+				"I like to work on projects to solidify new concepts I'm learning.",
 			link: ["@GitHub", "https://github.com/oneminch?tab=repositories"],
 		},
 		{
@@ -33,15 +31,15 @@ const data_json = {
 			name: "OpenGenus Foundation 📝",
 			date: ["Sep '19", "Feb '20"],
 			desc:
-				"As a Software Developer Intern at the OpenGenus Foundation, I was mainly involved in writing articles related to various web development topics.",
+				"I contributed to the foundation’s large database of articles related to various computer science topics to make learning programming more accessible. I wrote technical articles on some web technologies and concepts.",
 			link: ["Profile", "https://iq.opengenus.org/author/durg"],
 		},
 		{
 			id: 4,
 			name: "Tennessee Tech 🎓",
-			date: ["Aug '17", "Dec '21 (exp.)"],
+			date: ["Aug '17", "Dec '21"],
 			desc:
-				"I'm currently a senior at Tennessee Tech University majoring in computer science; I transferred half-way from a 2 year college at which I majored in Information Management Systems.",
+				"I'm a recent Software Engineering (Computer Science) graduate of Tennessee Tech University; I had transferred half-way from a 2 year community college at which I majored in Information Management Systems.",
 			link: ["Homepage", "https://tntech.edu"],
 		},
 	],
@@ -70,13 +68,6 @@ const data_json = {
 			desc:
 				"A news app that loads the latest 20 headlines using the NewsAPI based on a category selected.",
 		},
-		// {
-		// 	name: "Dolist",
-		// 	url: "https://oneminch.dev/dolist/",
-		// 	app_icon: "img/logos/dolist.svg",
-		// 	desc:
-		// 		"A to-do app built with jQuery with ability to add, complete, edit and delete tasks (First JS Project)",
-		// },
 	],
 };
 

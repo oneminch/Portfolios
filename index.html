@@ -25,9 +25,7 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 	<!-- Insights -->
 	<script async defer data-website-id="d1c29b81-2b65-4740-89f9-e6bf2967fd19" src="https://oneminch-umami.vercel.app/minch-measure.js"></script>
-	<!-- hCaptcha widget -->
-	<!-- <script src="https://js.hcaptcha.com/1/api.js" async defer></script> -->
-  <!-- Cloudflare Turnstile CAPTCHA -->
+  <!-- Turnstile CAPTCHA Widget -->
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
@@ -272,7 +270,7 @@
 			<textarea name="message" class="contact__message" id="message" cols="30" rows="10" placeholder="Message..."
 				required></textarea>
 
-			<!-- <div class="h-captcha" data-sitekey="e610dca7-9edb-4289-9bc5-22b72d9d03af"></div> -->
+      <!-- Turnstile client-side rendering -->
       <div class="cf-turnstile" data-sitekey="0x4AAAAAAABlDwSHN3HVmFWH"></div>
 
 			<div class="contact__buttons">

@@ -63,7 +63,7 @@ const data_json = {
 		},
 		{
 			name: "Newsfeed",
-			url: "https://oneminch.dev/newsfeed/",
+			url: "https://oneminch.github.io/Newsfeed/",
 			app_icon: "img/logos/newsfeed.svg",
 			desc:
 				"A news app that loads the latest 20 headlines using the NewsAPI based on a category selected.",
